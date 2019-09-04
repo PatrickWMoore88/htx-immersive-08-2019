@@ -23,3 +23,18 @@ def f_to_c(temp_f):
     return temp_c 
 temp_f_input = int(input("What is the temperature in Fahrenheit?: "))
 print(f_to_c(temp_f_input))
+#4/5.is_even and is_odd functions
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+def is_odd(num):
+    if is_even(num) != True:
+        return True
+    else:
+        return False
+num_input = int(input("What is your number?: "))
+print(is_even(num_input))
+print(is_odd(num_input))
+#
