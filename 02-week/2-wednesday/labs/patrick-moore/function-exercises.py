@@ -15,5 +15,11 @@ madlib(name_input, subject_input)
 def c_to_f(temp_c):
     temp_f = (temp_c * 9/5) + 32
     return temp_f
-temp_input = int(input("What is the temperature in Celsius?: "))
-print(c_to_f(temp_input))    
+temp_c_input = int(input("What is the temperature in Celsius?: "))
+print(c_to_f(temp_c_input))
+#3.Fahrenheit to Celsius conversion 
+def f_to_c(temp_f):
+    temp_c = (temp_f - 32) * 5/9
+    return temp_c 
+temp_f_input = int(input("What is the temperature in Fahrenheit?: "))
+print(f_to_c(temp_f_input))
