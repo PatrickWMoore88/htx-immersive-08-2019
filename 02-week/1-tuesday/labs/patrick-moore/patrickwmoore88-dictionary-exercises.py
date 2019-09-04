@@ -42,7 +42,7 @@ print(ramit['friends'][0]['email'])
 #4
 print(ramit['friends'][1]['interests'][1])
 print('=======================================================')
-#Exersice 3: Letter Summary
+#Exercise 3: Letter Summary
 word = str(input("What is your word?: "))
 letters_in_word = {}
 val = 1
@@ -51,7 +51,7 @@ for letter in word:
         letters_in_word[str(letter)] = val * word.count(str(letter))
 print(letters_in_word)
 print('=======================================================')
-#Exersice 4: Word Summary + Bonus Challenge
+#Exercise 4: Word Summary + Bonus Challenge
 phrase = str(input("What is your phrase?: "))
 words_in_phrase = {}
 val = 1
