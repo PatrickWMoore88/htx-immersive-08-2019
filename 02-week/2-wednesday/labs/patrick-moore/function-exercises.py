@@ -8,35 +8,35 @@ def madlib(name, subject):
         subject= 'Coding'
     print(f"{name}'s favorite subject is {subject}")
     print("=" * 38)
-print("=" * 38)
-print("[Names]'s favorite subject is [Subject]")
-print("=" * 38)
-name_input = input("What is the [Name]?: ")
-subject_input = input("What is the [Subject]?: ")
-print("=" * 38)
-madlib(name_input, subject_input)
+#print("=" * 38)
+#print("[Names]'s favorite subject is [Subject]")
+#print("=" * 38)
+#name_input = input("What is the [Name]?: ")
+#subject_input = input("What is the [Subject]?: ")
+#print("=" * 38)
+#madlib(name_input, subject_input)
 #2.Celsius to Fahrenheit conversion
 def c_to_f(temp_c):
     temp_f = (temp_c * 9/5) + 32
     return f"{temp_f}F"
-temp_c_input = int(input("What is the temperature in Celsius?: "))
-print(c_to_f(temp_c_input))
+#temp_c_input = int(input("What is the temperature in Celsius?: "))
+#print(c_to_f(temp_c_input))
 #3.Fahrenheit to Celsius conversion 
 def f_to_c(temp_f):
     temp_c = (temp_f - 32) * 5/9
     return f"{temp_c}C" 
-temp_f_input = int(input("What is the temperature in Fahrenheit?: "))
-print(f_to_c(temp_f_input))
-print("=" * 38)
+#temp_f_input = int(input("What is the temperature in Fahrenheit?: "))
+#print(f_to_c(temp_f_input))
+#print("=" * 38)
 #4/5.is_even and is_odd functions
 def is_even(num):
     return num % 2 == 0
 def is_odd(num):
     return not is_even(num)
-num_input = int(input("What is your number?: "))
-print(is_even(num_input))
-print(is_odd(num_input))
-print("=" * 38)
+#num_input = int(input("What is your number?: "))
+#print(is_even(num_input))
+#print(is_odd(num_input))
+#print("=" * 38)
 #6/7.only_evens and only_odds functions
 def only_evens(number_list):
     evens_list = []
@@ -49,23 +49,47 @@ def only_evens(number_list):
     print(evens_list)
     print(odds_list)
 number_list = [11, 20, 42, 97, 23, 10]
-only_evens(number_list)
-print(only_odds(number_list))
-print("=" * 38)
+#only_evens(number_list)
+#print(only_odds(number_list))
+#print("=" * 38)
 #Medium
 #1/2.Find the smallest and largest values
 def smallest_and_largest(num_list):
     print(f"Given this list of numbers: {number_list}")
     print(f"The smallest value is: {min(number_list)}")
     print(f"The largest value is: {max(number_list)}")
-smallest_and_largest(number_list)
-print("=" * 38)
+#smallest_and_largest(number_list)
+#print("=" * 38)
 #3/4.Find the shortest and longest Strings
 def shortest_and_longest(list_of_words):
     print(f"Given this list of words: {list_of_words}")
     print("The shortest word is: ", min(list_of_words, key= len))
     print("The longest word is: ", max(list_of_words, key= len))
-words_list = ['Hello', 'My', 'Name', 'Is', 'Patrick']
-shortest_and_longest(words_list)
-print("=" * 38)
+#words_list = ['Hello', 'My', 'Name', 'Is', 'Patrick']
+#shortest_and_longest(words_list)
+#print("=" * 38)
+#Large
+#1 Tic-tac-toe
+#board
+board = ["1", "2", "3",
+         "4", "5", "6",
+         "7", "8", "9"]
+#display board         
+def display_board():
+    print(board[0] + " | " + board[1] + " | " + board[2])
+    print("---------")
+    print(board[3] + " | " + board[4] + " | " + board[5])
+    print("---------")
+    print(board[6] + " | " + board[7] + " | " + board[8])
+display_board()
+def location():
+    position = int(input("Please choose a location 1-9: ")) - 1
+    board[position] = x_or_o
 
+#play game
+#handle turns
+#check winner
+    #check rows
+    #check columns
+    #check diagonals
+#check tie

@@ -1,0 +1,23 @@
+# Phonebook Directory
+entries = [
+    {'first_name':'Alex', 'last_name': 'Conde', 'phone': '234-567-8901'},
+    {'first_name':'Amy', 'last_name': 'Carter', 'phone': '234-567-8902'},
+    {'first_name':'Brian', 'last_name': 'Carter', 'phone': '234-567-8903'},
+    {'first_name':'Bobby', 'last_name': 'Molton', 'phone': '234-567-8904'},
+    {'first_name':'Chelsea', 'last_name': 'Cathey', 'phone': '234-567-8905'},
+    {'first_name':'Christina', 'last_name': 'Johnson', 'phone': '234-567-8906'},
+    {'first_name':'Derrick', 'last_name': 'Ross', 'phone': '234-567-8907'},
+    {'first_name':'Donnie', 'last_name': 'Morgan', 'phone': '234-567-8908'},
+    {'first_name':'Eric', 'last_name': 'Hill', 'phone': '234-567-8909'},
+    {'first_name':'Erin', 'last_name': 'Johnson', 'phone': '234-567-8900'},
+    {'first_name':'Frank', 'last_name': 'Tank', 'phone': '234-567-8911'},
+    {'first_name':'Freddy', 'last_name': 'Hill', 'phone': '234-567-8912'},
+    {'first_name':'Greg', 'last_name': 'Mitchells', 'phone': '234-567-8913'},
+    {'first_name':'Gorge', 'last_name': 'Gomez', 'phone': '234-567-8914'},
+    {'first_name':'Harry', 'last_name': 'Henderson', 'phone': '234-567-8915'},
+    {'first_name':'Hobo', 'last_name': 'Joe', 'phone': '234-567-8916'},
+    {'first_name':'Igor', 'last_name': 'Blats', 'phone': '234-567-8917'},
+    {'first_name':'James', 'last_name': 'Bond', 'phone': '234-567-8918'},
+    {'first_name':'Kyle', 'last_name': 'Broflovski', 'phone': '234-567-8919'},
+    {'first_name':'Leroy', 'last_name': 'Jenkins', 'phone': '234-567-8910'},
+]
