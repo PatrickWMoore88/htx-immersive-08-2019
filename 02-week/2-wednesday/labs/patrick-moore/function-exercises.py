@@ -2,6 +2,10 @@
 def madlib(name, subject):
     name = name_input
     subject = subject_input
+    if name_input == '':
+        name = 'Patrick'
+    if subject_input == '':
+        subject= 'Coding'
     print(f"{name}'s favorite subject is {subject}")
     print("=" * 38)
 print("=" * 38)
@@ -26,15 +30,9 @@ print(f_to_c(temp_f_input))
 print("=" * 38)
 #4/5.is_even and is_odd functions
 def is_even(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+    return num % 2 == 0
 def is_odd(num):
-    if is_even(num) != True:
-        return True
-    else:
-        return False
+    return not is_even(num)
 num_input = int(input("What is your number?: "))
 print(is_even(num_input))
 print(is_odd(num_input))
@@ -42,17 +40,32 @@ print("=" * 38)
 #6/7.only_evens and only_odds functions
 def only_evens(number_list):
     evens_list = []
-    for nums in number_list:
-        if nums % 2 == 0:
-            evens_list.append(nums)
-    return evens_list
-def only_odds(number_list):
     odds_list = []
     for nums in number_list:
-        if nums % 2 == 1:
+        if is_even(nums):
+            evens_list.append(nums)
+        elif is_odd(nums):
             odds_list.append(nums)
-    return odds_list
+    print(evens_list)
+    print(odds_list)
 number_list = [11, 20, 42, 97, 23, 10]
-print(only_evens(number_list))
+only_evens(number_list)
 print(only_odds(number_list))
 print("=" * 38)
+#Medium
+#1/2.Find the smallest and largest values
+def smallest_and_largest(num_list):
+    print(f"Given this list of numbers: {number_list}")
+    print(f"The smallest value is: {min(number_list)}")
+    print(f"The largest value is: {max(number_list)}")
+smallest_and_largest(number_list)
+print("=" * 38)
+#3/4.Find the shortest and longest Strings
+def shortest_and_longest(list_of_words):
+    print(f"Given this list of words: {list_of_words}")
+    print("The shortest word is: ", min(list_of_words, key= len))
+    print("The longest word is: ", max(list_of_words, key= len))
+words_list = ['Hello', 'My', 'Name', 'Is', 'Patrick']
+shortest_and_longest(words_list)
+print("=" * 38)
+
