@@ -19,10 +19,10 @@ def add_entry():
     print(f"{first_name} {last_name} has been added successfully!")
     return entries
 
-def delete_entry(name):
-    print("Name of the entry to delete: ")
-    entries.pop({"first_name": name, "last_name": last_name, "phone": phone})
-    return entries
-    print(f"{first_name} {last_name} has been deleted successfully!")
+#def delete_entry(name):
+#    print("Name of the entry to delete: ")
+#    entries.pop({"first_name": name, "last_name": last_name, "phone": phone})
+#    return entries
+#    print(f"{first_name} {last_name} has been deleted successfully!")
    
 

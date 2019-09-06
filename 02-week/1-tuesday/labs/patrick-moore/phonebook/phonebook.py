@@ -17,10 +17,10 @@ while selection:
         functionality.add_entry()
         view.line_break()
     elif selection == 3:
-        functionality.delete_entry()
+#        functionality.delete_entry()
         view.line_break()
     elif selection == 4:
-        functionality.show_all_entries()
+#        functionality.show_all_entries()
     elif selection == 5:
         break
     elif selection > 5:
