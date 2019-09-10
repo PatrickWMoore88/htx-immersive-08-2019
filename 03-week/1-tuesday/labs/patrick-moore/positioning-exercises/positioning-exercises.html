@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning Exercises</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .main{
+            background-color: purple;
+            text-align: center;
+            margin: 0;
+            border: 2px solid black;
+            padding: 300px 100px 300px 100px;
+            height: 800px;
+            width: 80%;
+            float:right
+        }
+        .sidebar-left{
+            clear: both
+            background-color: darkgoldenrod;
+            text-align: center;
+            margin: 0;
+            border: 2px solid black;
+            padding: 300px 20px 300px 20px;
+            height: 800px;
+            width: 20%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">Main</div>
+    <aside class="sidebar-left">Side Bar Right</aside>
+    
+</body>
+</html>
