@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-color: blueviolet;
+    align-self: flex-end;
+}
+
+.main {
+
+}
+
+.sidebar{
+
+}
+
+.footer {
+
+}
