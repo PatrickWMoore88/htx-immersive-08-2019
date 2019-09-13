@@ -6,39 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Layout Exercise</title>
     <style>
+        /* Selectors */
         * {
             box-sizing: border-box
         }
+
+        ul {
+            list-style-type: none;
+            color: white
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            flex-direction: column;
+        }
+
+        /* Classes */
+        .container {
+            background-color: green;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0px;
+        }
+
         .navigation {
             display: flex;
-            background-color: blue;
-            padding: 10px;
-            justify-content: space-between;
+            margin:0;
+            background-color: rgb(2, 2, 105);
+            padding: 5px;
+            justify-content: space-evenly;
         }
-        .title,
-        ul,
-        li {
+
+        .menu-container {
+            background-color: green;
+            display: flex;
+            margin:0;
+            padding:0;
+            width: 50%;
+        }
+
+        .header {
+            align-content: center;
+            
+        }
+
+        .main {
+
+        }
+        .pictures {
+
+        }
+        .footer {
+        }
+
+        .header,
+        .main,
+        .pictures,
+        .footer {
+           margin: 0;
+           border-top: 3px solid black;
+           justify-content: space-evenly; 
+        }
+
+        .title {
             color: white;
+            padding: 5px;
+            margin: 0px 10px 0px 0px
         }
-        .header {}
-        .main {}
-        .pictures {}
-        .footer {}
+
+        .menu {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            
+
+        }
+        
+        /* Selectors in Classes */
+        .menu > li {
+            margin-right: 10px;
+        }
+
+        .menu > li:last-child {
+            margin-right: 0;
+        }
+
     </style>
 </head>
-<body>
-    <nav class="navigation">
-        <a href="#" class="title">Company Name</a>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-    </nav>
-    <header class="header">Header</header>
-    <main class="main">Main</main>
-    <pictures class="pictures">Images</pictures>
-    <footer class="footer">Footer</footer>
-</body>
+    <body>
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="title">Company Name</a>
+                    <div class="menu-container">
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li>|</li>
+                            <li><a href="#">Products</a></li>
+                            <li>|</li>
+                            <li><a href="#">Company</a></li>
+                            <li>|</li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+            </nav>
+                <header class="header">Header</header>
+                <main class="main">Main</main>
+                <pictures class="pictures">Images</pictures>
+                <footer class="footer">Footer</footer>
+        </div>
+    </body>
 </html>
