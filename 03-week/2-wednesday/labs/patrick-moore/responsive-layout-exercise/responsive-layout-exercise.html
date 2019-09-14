@@ -26,10 +26,6 @@
             padding: 0;
         }
 
-        div {
-            flex-direction: column;
-        }
-
         /* Classes */
         .container {
             background-color: green;
@@ -56,27 +52,55 @@
             width: 50%;
         }
 
+        .list-container {
+            display: flex;
+            /* background-color: red; */
+            flex-direction:row;
+            margin:0;
+            padding:0;
+        }
+
+        .main-container {
+            background-color: red;
+            display: flex;
+            margin:0;
+            padding:0;
+        }
+        .div-columns {
+            flex-direction: column;
+        }
+        .div-rows {
+            flex-direction: row;
+        }
+
         .header {
-            align-content: center;
-            
+            padding: 60px;
         }
 
         .main {
+            padding: 50px;
+            height: 60%;
+            flex-wrap: wrap;
 
         }
         .pictures {
-
+            border-top: 3px solid black;
+            padding: 40px;
+            /* height: 40%; */
+            width:100%
         }
         .footer {
+            padding: 10px;
+            height: 5%
+            flex-direction: flex-end;
         }
 
         .header,
         .main,
-        .pictures,
         .footer {
            margin: 0;
            border-top: 3px solid black;
-           justify-content: space-evenly; 
+           text-align: center;
         }
 
         .title {
@@ -107,9 +131,9 @@
     </style>
 </head>
     <body>
-        <div class="container">
+        <div class=" div-columns">
             <nav class="navigation">
-                <a href="#" class="title">Company Name</a>
+                <a href="#" class="title">Our Company</a>
                     <div class="menu-container">
                         <ul class="menu">
                             <li><a href="#">Home</a></li>
@@ -122,10 +146,42 @@
                         </ul>
                     </div>
             </nav>
-                <header class="header">Header</header>
-                <main class="main">Main</main>
-                <pictures class="pictures">Images</pictures>
+            <div class="div-rows">
+                <header class="header">We Are Awesome!</header>
+                <div class="main-container">
+                <main class="main">Awesomeness</main>
+                    <div class="div-rows">
+                        <div>
+                            <p>Boldness 1</p>
+                            <ul>
+                                <li>Item One</li>
+                                <li>Item Two</li>
+                                <li>Item Three</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Boldness 2</p>
+                            <ul>
+                                <li>Item One</li>
+                                <li>Item Two</li>
+                                <li>Item Three</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Boldness 3</p>
+                            <ul>
+                                <li>Item One</li>
+                                <li>Item Two</li>
+                                <li>Item Three</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <div>
+                        <pictures class="pictures">Images</pictures>
+                    </div>
                 <footer class="footer">Footer</footer>
+            </div>
         </div>
     </body>
 </html>
